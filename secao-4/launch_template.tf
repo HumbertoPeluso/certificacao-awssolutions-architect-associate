@@ -7,9 +7,9 @@ resource "aws_launch_template" "servidorweb" {
 
   key_name = "keypair-devcert"
 
-  vpc_security_group_ids = [aws_security_group.only-my-pc.id, 
-  aws_security_group.only-web-my-pc.id, 
-  data.aws_security_group.default.id
+  vpc_security_group_ids = [aws_security_group.only-my-pc.id,
+    aws_security_group.only-web-my-pc.id,
+    data.aws_security_group.default.id
   ]
 
   tag_specifications {
