@@ -1,0 +1,1 @@
+Seção 4: High Availability and Scalability: ELB and ASG
